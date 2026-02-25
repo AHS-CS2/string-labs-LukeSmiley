@@ -14,7 +14,7 @@ public class FirstAndLast
 
 	public FirstAndLast(String s)
 	{
-		word = "compsci";
+		setString(s);
 	}
 
 	public void setString(String s)
@@ -24,13 +24,14 @@ public class FirstAndLast
 
 	public String getFirst()
 	{
-		String first = out.print(word.substring(0));
+		System.out.println("word :: " + word);
+		String first = word.substring(0,1);
 		return first;
 	}
 	
-	public String getLast()
+	public char getLast()
 	{
-		String last = out.print(word.charAt(2));
+		char last = (word.charAt(word.length() - 1));
 		return last;
 	}
 

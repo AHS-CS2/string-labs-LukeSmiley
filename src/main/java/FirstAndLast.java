@@ -20,11 +20,11 @@ public class FirstAndLast
 	public void setString(String s)
 	{
 		word = s;
+		System.out.println("word :: " + word);
 	}
 
 	public String getFirst()
 	{
-		System.out.println("word :: " + word);
 		String first = word.substring(0,1);
 		return first;
 	}
@@ -37,7 +37,6 @@ public class FirstAndLast
 
  	public String toString()
  	{
- 		String output = ("word :: " + word);
- 		return output;
+ 		return "\n\n";
 	}
 }

@@ -14,27 +14,28 @@ public class StringRipper
 	
 	public StringRipper()
 	{
-		setString();
+
 	}
 
 	public StringRipper(String s)
 	{
+		setString(s);
 	}
 	
    public void setString(String s)
    {
-	word=s;
+	word = s;
    }	
 
 	public String ripString(int x, int y)
 	{
-		word.subString(x, y);
-		return "";
+		String list = (word.substring(x,y));
+		return list;
 	}
 
  	public String toString()
  	{
-		return word;
+		System.out.print(word);
  		return "\n\n";
 	}
 }

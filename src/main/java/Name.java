@@ -24,7 +24,6 @@ public class Name
    public void setName(String s)
    {
 		name = s;
-		System.out.print(name + "\n");
    }
 
 	public String getFirst()
@@ -35,15 +34,22 @@ public class Name
 
 	public String getLast()
 	{
-		if(name.equals(10)){
-			String last = name;
-			return last;
-		}
-		return "";
+		String last = name;
+		if(name.length() == 8){
+			last = name.substring(5,8);
+		}else if(name.length() == 11){
+				last = name.substring(6,11);
+			}else if(name.length() == 13){
+				last = name.substring(6,13);
+			}else if(name.length() == 16){
+				last = name.substring(6,16);
+			}
+		return last;
 	}
 
  	public String toString()
  	{
+		System.out.println(name);
  		return "";
 	}
 }

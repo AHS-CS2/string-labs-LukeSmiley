@@ -1,10 +1,10 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
 
-//Name -
-//Date -
-//Class -
-//Lab  - 
+//Name - Luke Smiley
+//Date - 3/2/26
+//Class - Comp Sci 1
+//Lab  - Ripper Runner
 
 import static java.lang.System.*;
 

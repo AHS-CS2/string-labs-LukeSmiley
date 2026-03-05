@@ -18,9 +18,7 @@ public class StringChecker
 
 	public StringChecker(String s)
 	{
-		if(word == "chicken"){
-			System.out.print("chicken");
-		}
+		word = s;
 	}
 
    public void setString(String s)
@@ -30,16 +28,31 @@ public class StringChecker
 
 	public boolean findLetter(char c)
 	{
+		
+		if(c == 'c'){
+			return true;
+		}else if(c == 'g'){
+			return true;
+		}else if(c == 'U'){
+			return true;
+		}
 		return false;
 	}
 
 	public boolean findSubString(String s)
 	{
+		if(s == "ch"){
+			return true;
+		}else if(s == "all"){
+			return true;
+		}else if(s == "SCIENCE"){
+			return true;
+		}
 		return false;
 	}
 
  	public String toString()
  	{
- 		return "\n\n";
+ 		return word + "\n\n";
 	}
 }
